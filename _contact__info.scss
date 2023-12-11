@@ -1,0 +1,161 @@
+.contact__info-title {
+    position: relative;
+    margin-top: 33px;
+    text-align: center;
+
+    h2 {
+        font-size: 48px;
+        font-family: $font-title;
+        color: $title-color;
+        font-weight: 600px;
+        line-height: 58px;
+        @media screen and(max-width:$tablet) {
+            font-size: 35px;
+            margin-bottom: 20px;
+         }
+    }
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        right: 320px;
+        top: 31px;
+        width: 97px;
+        height: 0px;
+        color: $title-color;
+        border: 1px solid;
+
+        @media screen and(max-width:$tablet) {
+            display: none;
+         }
+
+         @media screen and (max-width: $modile) {
+            display: none;
+
+        }
+    }
+}
+
+
+
+.contact__info-hotels {
+    margin-top: 39px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 107px;
+    text-align: center;
+
+    @media screen and(max-width:999px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 30px;
+        overflow-x: none;
+        padding-top: 10px;
+    }
+}
+
+
+.logo__promenad{
+    margin-bottom: 20px;
+}
+
+
+.contact__info-adress {
+    font-size: 24px;
+    font-family: $font-title;
+    font-weight: 500;
+
+    color: $title-color;
+    margin-bottom: 36px;
+
+    @media screen and(max-width:$tablet) {
+        font-size: 17px;
+    }
+
+    @media screen and (max-width: $modile) {
+       margin-bottom: 20px;
+
+    }
+}
+
+.contact__info-number {
+    font-size: 20px;
+    font-family: $font-text;
+    font-weight: 400;
+    color: $title-color;
+    padding-bottom: 10px;
+
+    @media screen and (max-width: $modile) {
+        font-size: 17px;
+    }
+}
+
+.contact__info-number span {
+    font-size: 24px;
+    font-family: $font-text;
+    font-weight: 500;
+    color: $title-color;
+    padding-right: 50px;
+
+    @media screen and(max-width:$tablet) {
+        font-size: 17px;
+    }
+
+    @media screen and (max-width: $modile) {
+        padding-right: 24px;
+
+    }
+
+}
+
+.contact__info-email{
+    font-size: 20px;
+    font-family: $font-text;
+    font-weight: 400;
+    color: $title-color;
+    margin-bottom: 82px;
+
+    @media screen and(max-width:$tablet) {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: $modile) {
+        margin-bottom: 21px;
+        font-size: 15px;
+    }
+}
+
+.contact__info-email span {
+    font-size: 24px;
+    font-family: $font-text;
+    font-weight: 500;
+    color: $title-color;
+    padding-right: 50px;
+
+    @media screen and(max-width:$tablet) {
+        font-size: 17px;
+    }
+
+    @media screen and (max-width: $modile) {
+        padding-right: 20px;
+    }
+}
+
+.cnt{
+    padding: 6px 30px;
+    border-radius: 5px;
+    background-color: #113CFC;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in;
+}
+
+.footer__copy{
+    text-align: center;
+    font-family: $font-text;
+    font-weight: 500;
+}

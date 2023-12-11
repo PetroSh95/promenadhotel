@@ -1,0 +1,10 @@
+nav{
+    font-size: 20px;
+    font-family: $font-title;
+    font-weight: 500;
+}
+
+.nav__list{
+    display: flex;
+    column-gap: 20px;
+}

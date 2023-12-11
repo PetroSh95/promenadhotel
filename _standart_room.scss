@@ -1,0 +1,92 @@
+.standart__rooms{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+
+    @media screen and(max-width:999px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 30px;
+        overflow-x: none;
+        padding-top: 10px;
+    }
+}
+
+.room__name{
+    font-family: $font-title;
+    font-size: 36px;
+    font-weight: 500;
+    color: $title-color;
+
+    margin-top: 10px;
+}
+
+.room__text{
+    font-family: $font-text;
+    font-size: 13px;
+    font-weight: 400;
+    color: $text-color;
+    margin-top: 4px;
+}
+
+.room__price{
+    margin-top: 10px;
+    font-family: $font-button;
+    font-weight: 500;
+    font-size: 18px;
+
+    color: $title-color;
+}
+
+.btn{
+    font-family: $font-button;
+    font-size: 16px;
+    font-weight: 500;
+    color: $footer-color;
+    margin-right: 100px;
+    padding: 6px 20px;
+    background: $button-color;
+    border-radius: 5px;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.btn:hover{
+    background:rgba(146, 146, 246, 0.693);
+
+    transition:  0.2s all;
+}
+
+
+.btn_push_two{
+    font-family: $font-button;
+    font-size: 16px;
+    font-weight: 500;
+    color: $footer-color;
+
+    padding: 6px 20px;
+    background-color: rgb(255, 136, 0);
+    border-radius: 5px;
+}
+
+.btn_push_two:hover{
+    background:rgba(146, 146, 246, 0.693);
+
+    transition:  0.2s all;
+}
+
+.cena {
+    position: relative;
+    font-size: 15px;
+}
+
+.cena:before {
+    border-bottom: 3px solid red;
+    position: absolute;
+    content: "";
+    width: 104%;
+    height: 66%;
+    transform: rotate(-12deg);
+}

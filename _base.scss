@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600&family=Montserrat&family=Roboto:wght@300;500&display=swap');
+
+
+
+body{
+    font-family: $font-title;
+    color: $text-color;
+    font-size: 14px;
+    position: relative;
+    max-width: 100%; 
+    overflow-x: hidden;
+} 
+
+.container{
+    margin: 0 auto;
+    padding-left: 45px;
+    padding-right: 60px;
+    max-width: 1287px;
+}
+
+.no-scroll{
+    overflow-y: hidden;
+} 
