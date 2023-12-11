@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <title>№-21 - Люкс</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-row">
+                    <a href="index.html">
+                        <img src="./img/header/Logo__promenad.png" alt="">
+                    </a>
+                    <div class="header__nav">
+                        <nav>
+                            <ul class="nav__list">
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="index.html">Номера </a></li>
+                                <li><a href="contact.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__nav-btn">
+                        <div class="nav-icon-btn">
+                            <div class="nav-icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="standart__room">
+            <div class="container">
+                <div class="standart__room-title">
+                    <h2>Описание номера</h2>
+                </div>
+
+                <div class="standart__room-about">
+                    <div class="slider">
+                        <div class="slider-win">
+                            <img src="./img/rooms/luxnomera/1.jpg" alt="">
+                            <img src="./img/rooms/luxnomera/2.jpg" alt="">
+                            <img src="./img/rooms/luxnomera/3.jpg" alt="">
+                            <img src="./img/rooms/luxnomera/4.jpg" alt="">                
+                        </div>
+                
+                        <div class="slider-controll">
+                            <div class="slider-item" data-item="1"><img src="./img/rooms/luxnomera/1.jpg" alt="">
+                            </div>
+                            <div class="slider-item" data-item="2"><img src="./img/rooms/luxnomera/2.jpg" alt="">
+                            </div>
+                            <div class="slider-item" data-item="3"><img src="./img/rooms/luxnomera/3.jpg" alt="">
+                            </div>
+                            <div class="slider-item" data-item="4"><img src="./img/rooms/luxnomera/4.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+                <div class="standart__room-info">
+                    <div class="standart__room-info-title">
+                        <h3>№-21 - Люкс</h3>
+                    </div>
+                    <div class="standart_room-info-text">Двухуровневый дизайнерский номер с верандой и прекрасным видом на город. Две
+                        просторные комнаты, мини- кухня. <br><br>
+                        
+                        Рассчитанные на 1-4 человека.<br><br><br>
+                        9000 руб/ 24 часа <br><br>
+                        7000 руб/ 12 часов <br><br>
+                        + Завтрак 500 руб. <br>
+                        В нашем отеле расчетный час отсутствует. <br><br>
+                        <p>Бронирование на 12 часов дотупно только в день заезда<span class="star">*</span></p>
+                    </div>
+                    <div class="standart_room-info-benefits">Оснащение</div>
+                    <div class="standart_room-info-benefits-items">
+                        <ul>
+                            <li><img src="./img/icon.png" alt="">Кондиционер</li>
+                            <li><img src="./img/icon.png" alt="">Телефизор</li>
+                            <li><img src="./img/icon.png" alt="">Интернет</li>
+                            <li><img src="./img/icon.png" alt="">Wi-fi</li>
+                        </ul>
+                    </div>
+                    <div class="standart_room-info-price">
+                        <div class="standart__room-price-oneday">
+                            24 часа 9000 ₽
+                        </div>
+                        <div class="standart__room-price-halfday">
+                            12 часов 7000 ₽
+                        </div>
+
+                        <div class="standart__room-more">
+                            <div class="standart__room-more-title">Дополнительно</div>
+                            <div><span><img src="/img/icon_cup.png" alt=""></span>Завтрак +500 руб.</div>
+                        </div><br><br>
+                        <div> 
+                            <a href="all_rooms.html"><button class="btn">Другие номера</button></a>
+                            <a href="#cta__form-block"><button class="btn_push">Заказать</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta__form">
+                    <div class="cta__title">
+                        <h2>Оставить заявку на бронирование</h2>
+                    </div>
+                    <form class="cta__form-block" id="cta__form-block">
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="Hotels">
+                        <input type="hidden" name="admin_email" value="shtefanpetro@gmail.com">
+                        <input type="hidden" name="form_subject" value="Бронирование: Номер Люкс 21">
+                        <input type="hidden" name="breakfest" value="Завтрак включен">
+                        <input type="hidden" value="Дата прибытия">
+                        <input type="hidden" value="Дата выезда">
+                        <!-- END Hidden Required Fields -->
+                        <input type="text" name="Имя" class="login" placeholder="Ваше имя..." required>
+                        <input type="email" name="E-mail" placeholder="Ваш e-mail..." required>
+                        <input type="tel" name="Телефон" placeholder="Ваш телефон...">
+                        <div class="options__item">
+                            <input type="radio" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;
+                            " name="Завтрак" value="Включен">
+                            <label for="breakfest">Завтрак</label>
+                            <div class="check">
+                                <div class="check_in">
+                                    <label for="from">Дата заселения:</label>
+                                    <input type="text" id="from" name="дата прибытия" value="Дата прибытия" /> <br><br>
+                                    <label for="from">Время заезда</label><br>
+                                    <input type="time" name="время заезда" value="Время заезда" />
+                                </div>
+                                <div class="check_out">
+                                    <label for="to">Дата высиления:</label>
+                                    <input type="text" id="to" name="дата выезда" value="Дата выезда" /> <br><br>
+                                    <label for="from">Время выезда</label><br>
+                                    <input type="time" name="время выезда" value="Время выезда" /><br><br>
+                                </div>
+                            </div>
+                            <div class="comm">
+                                <label for="comment">Комментарий:</label><br>
+                                <textarea name="comment" cols="40" rows="10"
+                                    style="background-color: white; width: 270px; height: 96px; color: black; font-family: 'Montserrat', sans-serif;"></textarea>
+                            </div>
+
+
+                            <button class="cta__btn">Оставить заявку</button>
+                        </div>
+                    </form>
+                    <div class="cta__footer">
+                        <div class="cta__info">
+                            *Вы отправляете заявку на бронирование номера. Наш менеджер <br> свяжется с вами как можно
+                            скорее.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/main.js"></script>
+</html>
